@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24406606",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24406607",
     "lean_source": {
       "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
       "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
