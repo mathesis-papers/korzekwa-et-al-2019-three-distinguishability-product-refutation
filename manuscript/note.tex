@@ -1,0 +1,507 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=27mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue]{hyperref}
+\setlength{\emergencystretch}{2em}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\A}{\mathcal A}
+\newcommand{\Pp}{\mathcal P}
+\title{Counterexamples to Korzekwa et al. (2019),\break
+Section III.B, p.~6, Eq. (30): extending constructions of\break
+Bengtsson et al. (2005) and Korzekwa et al. (2019)}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\
+\small ChronoAI Pte Ltd, Singapore}
+\date{6 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+For the product-structure conjecture of Korzekwa, Czach\'orski,
+Pucha\l a and \.Zyczkowski (2019), Section III.B, Eq. (30) of
+arXiv:1812.09083v3, we extend constructions of Bengtsson et al. (2005)
+and Korzekwa et al. (2019, Appendix C.1) by identifying
+a two-parameter family of counterexamples and giving a further counterexample
+outside that family. All are common diagonals of three orthogonal pure states
+and fail the proposed form under every vertex ordering. A rational example is
+$(1/6,1/4,7/24,7/24)$; its total-variation distance from the union of proposed
+product forms is at least $1/192$. The obstruction is an exact rank-one test
+on the residual barycentric weights.
+\end{abstract}
+
+\section{The conjecture and its counterexample}
+We refute the necessary product condition in Korzekwa et al. (2019),
+Section III.B, p.~6, Eq. (30) of arXiv:1812.09083v3.
+Let $\A_d^M$ denote the probability vectors that are common diagonals,
+in a fixed orthonormal basis, of $M$ density matrices with pairwise
+orthogonal supports. This is Definition 1 of \cite{KCPZ}.
+For $d=4$ and $M=3$, write
+\[
+ f^j_k=\frac{1-\delta_{jk}}3,\qquad j,k\in\{0,1,2,3\}.
+\]
+The conjecture in Section III.B, Eq. (30) of \cite{KCPZ} proposes
+\begin{equation}\label{eq:ansatz}
+ p=abf^{\sigma(0)}+a(1-b)f^{\sigma(1)}
+ +(1-a)bf^{\sigma(2)}+(1-a)(1-b)f^{\sigma(3)},
+ \qquad a,b\in[0,1],
+\end{equation}
+as the form of points in $\A_4^3$. Here $\sigma$ is a permutation;
+allowing it to depend on $p$ makes the proposed necessary condition weaker
+than any fixed ordering convention.
+The source's wording immediately before Eq. (30) is
+``we conjecture that points belonging to $\A_4^3$ have the following
+product structure''. Its Fig. 2(c) and Appendix C.3, Fig. 8 depict the
+conjectured region. Our conclusion concerns this asserted necessity, not
+the converse.
+
+There is already a useful construction in the same paper:
+Appendix C.1, Eqs. (C1)--(C12), proves that the segments from the centre
+of the bounding tetrahedron to its edges lie in $\A_4^3$.
+We show below that most points in this previously proved family already
+violate Eq. (30), and give a short proof of the construction with an explicit
+rational instance. The next theorem gives a different example, outside
+those centre-to-edge segments. The underlying inclusion is their result.
+Its radial subfamily $s=0$ already follows from
+\cite[Section 4, Eqs. (35)--(40)]{BEKTZ}, released in February 2004 and
+published in 2005. The two-parameter inclusion appears in the first
+preprint of \cite{KCPZ} (21 December 2018), Appendix B.1,
+Eqs. (B1)--(B12); the journal-associated version renumbers it as Appendix C.1.
+The algorithm used for the source's numerical evidence is
+described in \cite[Appendix A]{RGZ}.
+
+\begin{theorem}\label{thm:main}
+Put $r=\sqrt5$ and
+\begin{equation}\label{eq:point}
+ \alpha=\frac{5-r}{10},\qquad
+ \beta=\frac{5-r}{20},\qquad
+ \gamma=\frac{r-1}{4},\qquad
+ p=(\alpha,\beta,\alpha,\gamma).
+\end{equation}
+Then $p\in\A_4^3$, but \eqref{eq:ansatz} fails for every permutation
+$\sigma$ and every $a,b\in[0,1]$. In particular, the conjecture is
+refuted (explicit counterexample), even when restricted to pure states and
+to the strict interior of the bounding tetrahedron.
+\end{theorem}
+
+\begin{proof}
+The inequalities $11/5<r<9/4$ follow by squaring. They imply
+$0<\alpha,\beta,\gamma<1/3$, and direct summation gives
+$2\alpha+\beta+\gamma=1$.
+Let $z=e^{\pi i/5}$ and $t=(1+r)/2$. Consider the three column vectors
+\begin{equation}\label{eq:states}
+ x_0=\begin{pmatrix}\sqrt\alpha\\\sqrt\beta\\\sqrt\alpha\\\sqrt\gamma\end{pmatrix},\quad
+ x_1=\begin{pmatrix}\sqrt\alpha\\\sqrt\beta z^2\\\sqrt\alpha z^4\\\sqrt\gamma z^7\end{pmatrix},\quad
+ x_2=\begin{pmatrix}-\sqrt\alpha\\\sqrt\beta z^9\\\sqrt\alpha z^3\\\sqrt\gamma z^9\end{pmatrix}.
+\end{equation}
+All have squared coordinate moduli $p$, hence norm one. The elementary
+relations $z^5=-1$, $z+\overline z=t$, and $|z|=1$ give
+\begin{equation}\label{eq:powers}
+ z^2=tz-1,\quad z^3=tz-t,\quad z^4=z-t,\quad
+ z^7=1-tz,\quad z^9=t-z.
+\end{equation}
+For completeness, $2\cos(\pi/5)=t$ can also be obtained from
+$z^4-z^3+z^2-z+1=0$: dividing by $z^2$ shows that
+$s=z+\overline z$ satisfies $s^2-s-1=0$, and $s>0$ selects $t$.
+The scalar identities needed below are
+\begin{equation}\label{eq:weights}
+ \alpha=2\beta,\qquad \alpha t=\beta+\gamma,\qquad
+ (\gamma-\beta)t=\alpha,\qquad t^2=t+1.
+\end{equation}
+They follow by substituting $r^2=5$. Using \eqref{eq:powers},
+\begin{align*}
+ \langle x_0,x_1\rangle
+ &=\alpha+\beta z^2+\alpha z^4+\gamma z^7\\
+ &=(\alpha-\beta-\alpha t+\gamma)
+   +(\beta t+\alpha-\gamma t)z=0,\\
+ \langle x_0,x_2\rangle
+ &=-\alpha+(\beta+\gamma)z^9+\alpha z^3\\
+ &=\bigl[-\alpha+(\beta+\gamma-\alpha)t\bigr]
+   +(\alpha t-\beta-\gamma)z=0,\\
+ \langle x_1,x_2\rangle
+ &=-\alpha+\beta z^7+\alpha z^9+\gamma z^2
+   =-\langle x_0,x_1\rangle=0.
+\end{align*}
+For the second constant coefficient, \eqref{eq:weights} reduces it to
+$\alpha(t^2-t-1)$. Thus the rank-one matrices
+$\rho_j=x_jx_j^*$ are positive semidefinite, have trace one and common
+diagonal $p$, and satisfy $\rho_i\rho_j=0$ when $i\ne j$.
+This proves $p\in\A_4^3$.
+
+To exclude product form, set $q_k=1-3p_k$. These are the unique barycentric
+weights in $p=\sum_k q_k f^k$, since $\sum_kq_k=1$ and
+$p_k=(1-q_k)/3$. Here
+\begin{equation}\label{eq:q}
+ q=(A,B,A,C),\qquad
+ A=\frac{3r-5}{10},\quad B=\frac{5+3r}{20},\quad
+ C=\frac{7-3r}{4}.
+\end{equation}
+Equation \eqref{eq:ansatz} would imply
+$q_{\sigma(0)}q_{\sigma(3)}=q_{\sigma(1)}q_{\sigma(2)}$.
+There are just three partitions of four coordinates into two unordered
+pairs. Their product differences, in a fixed order, are
+\begin{align}\label{eq:gaps}
+ q_0q_1-q_2q_3&=\frac{21-9r}{10}>0,\notag\\
+ q_0q_2-q_1q_3&=\frac{33-15r}{40}<0,\\
+ q_0q_3-q_1q_2&=-\frac{21-9r}{10}<0.\notag
+\end{align}
+The signs follow from $11/5<r<9/4<7/3$. Hence no permutation can
+satisfy the required equality. All $q_k$ are positive, so $p$ is strictly
+inside $\Pp_4^3=\operatorname{conv}\{f^0,f^1,f^2,f^3\}$ as well.
+\end{proof}
+
+\section{What the product condition actually tests}
+\begin{proposition}\label{prop:rankone}
+Suppose $0\le p_k\le1/3$ and $\sum_kp_k=1$, and put $q_k=1-3p_k$.
+For a fixed ordering $\sigma$, \eqref{eq:ansatz} holds if and only if
+\[
+ \det\begin{pmatrix}
+ q_{\sigma(0)}&q_{\sigma(1)}\\
+ q_{\sigma(2)}&q_{\sigma(3)}
+ \end{pmatrix}=0.
+\]
+Consequently membership in the union of all product forms is equivalent
+to at least one of the three equal-product pairings being zero.
+\end{proposition}
+\begin{proof}
+Necessity follows from the four weights in \eqref{eq:ansatz}.
+Conversely write the displayed matrix as $(u\ v;w\ h)$, with
+$u+v+w+h=1$ and nonnegative entries. Set $a=u+v$, $b=u+w$.
+Then $a,b\in[0,1]$ and $u-ab=uh-vw=0$. Subtracting from the row
+and column sums gives $v=a(1-b)$, $w=(1-a)b$ and
+$h=(1-a)(1-b)$. This includes zero rows and columns.
+\end{proof}
+
+\begin{corollary}\label{cor:distance}
+Let $S$ be the union of the product forms \eqref{eq:ansatz}, over all
+permutations and parameters. For the vector in \eqref{eq:point},
+\[
+ \inf_{p'\in S}\frac12\|p-p'\|_1\ \ge\
+ \frac{15\sqrt5-33}{240}>0.
+\]
+\end{corollary}
+\begin{proof}
+The smallest absolute difference in \eqref{eq:gaps} is
+$m=(15r-33)/40$: the difference between the first absolute value and
+$m$ is $(117-51r)/40>0$, since $r<9/4$.
+For probability vectors $q,q'$, any fixed pairing polynomial
+$D(q)=q_iq_j-q_kq_l$ satisfies
+$|D(q)-D(q')|\le\|q-q'\|_1$, by expanding each product difference
+and bounding its coefficients by one. For $p'\in S$, one such
+$D$ vanishes at $q'=1-3p'$, but has magnitude at least $m$ at $q$.
+Thus $m\le\|q-q'\|_1=3\|p-p'\|_1$, as claimed.
+\end{proof}
+
+\section{Counterexamples from a previously proved family}
+\begin{proposition}[Korzekwa et al. (2019), Appendix C.1]\label{prop:family}
+For $0\le s\le1/2$ and $0\le t\le1/3$, put
+\[
+ a=\frac{1-3t}{4}+st,\qquad
+ b=\frac{1-3t}{4}+(1-s)t,\qquad h=\frac{1+t}{4}.
+\]
+Then $p(s,t)=(a,b,h,h)\in\A_4^3$, with pure-state witnesses.
+If $0\le s<1/2$ and $0<t<1/3$, it fails \eqref{eq:ansatz} for every
+permutation.
+\end{proposition}
+\begin{proof}
+The membership assertion is the inclusion proved in \cite[Appendix C.1]{KCPZ}.
+Here is a short proof that also handles the endpoints.
+Set $R=\sqrt{t(1+t)}/2$. The inequalities
+\[
+ |a-b|=t(1-2s)\le R\le a+b=\frac{1-t}{2}
+\]
+follow from $4t\le1+t$ and $3t\le1$. Consequently a unit complex number
+$u$ can be chosen with $|a+bu|=R$: the attainable magnitudes of $a+bu$
+fill $[|a-b|,a+b]$. Since $R/h\le2$, choose unit complex numbers $v,w$
+with $v+w=-(a+bu)/h$. Their real inner product is
+\[
+ \operatorname{Re}(\overline v w)=\frac{|v+w|^2-2}{2}
+ =\frac{t-1}{t+1}.
+\]
+The vectors with amplitude squares $(a,b,h,h)$ and phase rows
+$(1,1,1,1)$, $(1,u,v,w)$, $(1,u,w,v)$ have norm one.
+The first vector is orthogonal to the other two by the sum defining $v+w$;
+the remaining inner product is
+\[
+ a+b+2h\operatorname{Re}(\overline v w)
+ =\frac{1-t}{2}+\frac{t-1}{2}=0.
+\]
+For exclusion, write $c=(1-3t)/4$. The residual vector is
+\[
+ q=(c+3t(1-s),c+3ts,c,c).
+\]
+Its three pairing differences are
+\[
+ 3ct+9t^2s(1-s),\qquad 3ct(1-2s),\qquad 3ct(1-2s).
+\]
+All are positive in the stated open parameter range. Theorem~\ref{thm:main}'s
+pairing argument excludes every ordering.
+\end{proof}
+
+\begin{corollary}\label{cor:rational}
+The rational diagonal $p_*=(1/6,1/4,7/24,7/24)$ belongs to $\A_4^3$
+but has no product representation under any ordering. Its distance from
+the union $S$ of all forms \eqref{eq:ansatz} satisfies
+\[
+ \inf_{p'\in S}\tfrac12\|p_*-p'\|_1\ge\frac1{192}.
+\]
+\end{corollary}
+\begin{proof}
+Take $s=1/4,t=1/6$ in Proposition~\ref{prop:family}.
+For an explicit witness, set
+\[
+ \omega=\frac{-1+i\sqrt3}{2},\quad
+ v=-\frac{(1+3i\sqrt3)(1+i\sqrt6)}{14},\quad
+ w=-\frac{(1+3i\sqrt3)(1-i\sqrt6)}{14}.
+\]
+Then $|\omega|=|v|=|w|=1$, $v+w=-(1+3i\sqrt3)/7$ and
+$\operatorname{Re}(\overline v w)=-5/7$.
+Use the three phase rows in the preceding proof with
+$(a,b,h)=(1/6,1/4,7/24)$ and $u=\omega$.
+The residual vector is $(1/2,1/4,1/8,1/8)$, with pairing differences
+$7/64,1/32,1/32$. The Lipschitz argument of
+Corollary~\ref{cor:distance}, now with $m=1/32$, gives the bound.
+\end{proof}
+
+The example in Theorem~\ref{thm:main} is not a permutation of a member
+of the centre-to-edge family: in that family the repeated coordinates $h,h$
+are maximal, whereas its repeated coordinates $\alpha,\alpha$ are strictly
+between $\beta$ and $\gamma$.
+
+For $s=0$ the three residual pairing differences all equal
+$3ct>0$. Thus the radial subfamily already supplies counterexamples
+using the construction of Bengtsson et al. (2004/2005).
+The product-pairing equations also describe boundaries of a different
+set, the semigroup-compatible Pauli channels in
+\cite[Section IV, Eq. (23)]{PRZ}; that use does not characterize $\A_4^3$.
+
+\begin{corollary}\label{cor:unitary}
+For either explicit diagonal above, $T(p)=(p\ p\ p\ 1-3p)$ is
+unistochastic. The largest number of perfectly distinguishable states with
+that diagonal is exactly three. Every stochastic matrix having such a
+column admits at least three perfectly distinguishable channels without
+entangled inputs. For $T(p)$ that number is four.
+\end{corollary}
+\begin{proof}
+Complete the three orthonormal vectors to a unitary $U$. Row normalization
+gives $|U_{k3}|^2=1-3p_k$, as in \cite[Lemma 5]{KCPZ}.
+Four orthogonal-support density matrices in dimension four would all be
+rank one and sum to the identity, forcing $4p_k=1$ for all $k$, which neither
+diagonal satisfies.
+For a stochastic matrix $T$ with the selected column $l$, choose unit vectors
+$y_j^{(n)}$ with amplitude squares $T_{\cdot j}$, using the three orthogonal
+witnesses when $j=l$. The Kraus operators
+$K_j^{(n)}=|y_j^{(n)}\rangle\langle j|$ define trace-preserving channels
+with classical action $T$ and orthogonal outputs on $|l\rangle$.
+This is \cite[Proposition 19]{KCPZ} specialized to these diagonals.
+Finally, for the unistochastic $T(p)=|U|^2$, the four unitaries $D_jU$, where
+$D_j=\operatorname{diag}(1,i^j,i^{2j},i^{3j})$, have the same action and
+send $U^*(1,1,1,1)^\top/2$ to four orthogonal Fourier vectors.
+No unassisted protocol has more than four orthogonal outputs in dimension
+four. This is the construction of \cite[Proposition 15]{KCPZ}.
+\end{proof}
+
+\begin{corollary}[Korzekwa et al. (2019), Appendix C.2]\label{cor:face}
+No point in the relative interior of a two-dimensional face of $\Pp_4^3$
+belongs to $\A_4^3$.
+\end{corollary}
+\begin{proof}
+After permutation such a point has $p_0=1/3$ and
+$0<p_j<1/3$ for $j=1,2,3$. Lemma 6 of \cite{KCPZ} reduces the question
+to pure states. Make their first coordinates $1/\sqrt3$ and their first
+column real by phase choices. The truncated three columns have Gram matrix
+with diagonal $2/3$ and off-diagonal $-1/3$, so their sum is zero.
+In each remaining row the three entries therefore have equal nonzero modulus
+and sum zero; its phases are $(1,\omega,\omega^2)$ or
+$(1,\omega^2,\omega)$ with $\omega=e^{2\pi i/3}$.
+The imaginary part of the first two columns' inner product requires the
+three positive weights $p_1,p_2,p_3$ to split into two sets of equal weight
+$1/3$. One of these sets has at most one element, contradicting $p_j<1/3$.
+This is a short proof of the source's face exclusion, not a new exclusion.
+\end{proof}
+
+\section{Pure witnesses and the excluded radial segment}
+\begin{proposition}\label{prop:pure}
+Every $p\in\A_4^3$ has three orthogonal pure-state witnesses.
+Consequently $p\in\A_4^3$ if and only if
+$B(p)=(p\ p\ p\ \mathbf1-3p)$ is unistochastic.
+\end{proposition}
+\begin{proof}
+The ranks of three nonzero density matrices with orthogonal supports
+sum to at most four. Unless all are pure, their ranks are $(2,1,1)$.
+Let $x,y$ be unit vectors for the two pure states, so
+$|x_k|^2=|y_k|^2=p_k$. A diagonal unitary can make $y=\overline x$:
+at each nonzero coordinate choose its phase $d_k$ with
+$d_k^2=\overline{x_k}/y_k$, and choose it arbitrarily when $p_k=0$.
+This transformation preserves all diagonals and orthogonality.
+The two-dimensional complement $S$ of $\operatorname{span}\{x,\overline x\}$
+is invariant under conjugation. If $\rho$ is the remaining state, then
+$R=(\rho+\overline\rho)/2$ is real, positive semidefinite, trace one,
+supported on $S$ and has diagonal $p$.
+Real spectral decomposition on $S$ gives
+$R=\lambda aa^{\mathsf T}+(1-\lambda)bb^{\mathsf T}$,
+where $a,b\in S$ are real orthonormal vectors and $0\le\lambda\le1$.
+Then $z=\sqrt\lambda\,a+i\sqrt{1-\lambda}\,b$ is a unit vector in $S$
+and $|z_k|^2=R_{kk}=p_k$. Replacing $\rho$ by $zz^*$ gives three pure
+witnesses. Completing their columns to a unitary gives $B(p)$;
+conversely its first three unitary columns give the required witnesses.
+\end{proof}
+
+\begin{corollary}\label{cor:radial}
+For $-1/9\le t<0$, the probability vector
+$p_t=(1-3t,1+t,1+t,1+t)/4$ does not belong to $\A_4^3$.
+The endpoint $p_0=(1,1,1,1)/4$ does belong to $\A_4^3$.
+\end{corollary}
+\begin{proof}
+For a pure triple at $p_t$, dephasing one column and the first row
+reduces the remaining orthogonality conditions to the phase system
+in \cite[Section 4, Eqs. (35)--(38)]{BEKTZ}, with
+$L=(1-3t)/(1+t)>1$. The lemma in its Appendix C proves that this
+system has no solution for $L>1$. Proposition~\ref{prop:pure} extends
+the exclusion from pure witnesses to arbitrary density matrices.
+At $t=0$, three columns of the Fourier matrix give pure witnesses.
+Thus the exclusion interval printed after Eq. (C37) in \cite{KCPZ}
+must omit its central endpoint.
+\end{proof}
+
+\section{Coverage and further questions}
+The counterexample refutes necessity of Eq. (30), including the full-region
+interpretation of its plots. It does not refute the independently proved
+inclusions or exclusions in Appendix C.1--2 of \cite{KCPZ}.
+The relation to unistochastic matrices places the question in the
+dimension-four geometry studied by Bengtsson, Ericsson, Ku\'s, Tadej and
+\.Zyczkowski \cite{BEKTZ}; our obstruction is the explicit failure of the
+residual-weight rank-one condition, rather than a failure of unistochasticity.
+The following table separates the asserted conjecture, previously proved
+results and statements not posed by the source. No replacement description
+of the full region is asserted.
+\begin{center}
+\small
+\begin{tabular}{@{}p{.48\linewidth}p{.46\linewidth}@{}}
+\toprule
+Source item in \cite{KCPZ} & Coverage\\
+\midrule
+Section III.B, Eq. (30); Fig. 2(c); Appendix C.3, Fig. 8
+ & Refuted (explicit counterexamples), Theorem~\ref{thm:main} and
+ Proposition~\ref{prop:family}.\\
+Necessity under point-dependent ordering; pure/interior restrictions
+ & Not asserted separately in the source; fails for both explicit diagonals.\\
+Proposition 4: $\A_4^3\subseteq\Pp_4^3$
+ & Preserved; all four coordinates satisfy $p_k<1/3$.\\
+Appendix C.1, Eqs. (C1)--(C12): centre-to-edge inclusion
+ & Reproved; prior proof Korzekwa et al. (2019).
+ Its generic points also fail Eq. (30).\\
+Appendix C.2: proper-face exclusion; radial exclusion
+ & Face: reproved; prior proof Korzekwa et al. (2019).
+ Radial: prior pure-state proof Bengtsson et al. (2004/2005) cited;
+ mixed states follow from Proposition~\ref{prop:pure}.\\
+Appendix C.2, interval following Eqs. (C36)--(C37), inclusion of $t=0$
+ & Refuted-and-corrected at this endpoint: $\eta$ is included;
+ the exclusion uses $t<0$ (Corollary~\ref{cor:radial}).\\
+Lemma 5; Propositions 15 and 19
+ & Prior proofs cited; explicit instances in Corollary~\ref{cor:unitary}.\\
+Proposition 12: coarse-graining implication
+ & Prior proof Korzekwa et al. (2019); unchanged, not reproved.\\
+Proposition 8; Proposition 13 and Remark 14
+ & Prior results cited; no new global bound or centre-neighbourhood result.\\
+Conjecture 9, Eq. (31); Remark 10: star-shapedness
+ & Not covered by this construction.\\
+Sufficiency of Eq. (30); a full description of $\A_4^3$
+ & Not established here.\\
+Rank-one equivalence; distance estimates; exact state capacity;
+ pure witnesses throughout $\A_4^3$
+ & Not posed; proved here.\\
+Other Section IV results; Section V questions on noise and resources
+ & Not covered beyond Corollary~\ref{cor:unitary}.\\
+\bottomrule
+\end{tabular}
+\end{center}
+For the face argument after Eq. (C34) in \cite{KCPZ}, the normalized
+positive weights satisfy $\sum_j a_j=1$ and $\sum_j a_j\epsilon_j=0$
+with $\epsilon_j\in\{-1,1\}$. The two sign classes each have weight
+$1/2$, and one class is a singleton. Thus one $a_j=1/2$; the other two
+need only sum to $1/2$. Their equality is unnecessary for the exclusion.
+
+Proposition~\ref{prop:pure} connects Conjecture 9 in dimension four to
+the special repeated-column matrices $B(p)$. In particular,
+$B(\lambda p+(1-\lambda)\eta)=\lambda B(p)+(1-\lambda)W_4$.
+The star-shapedness theorems of \cite[Theorem 14, Corollary 16,
+Theorem 17]{RMKPZ} concern bracelet and factorisable matrices,
+dimension-three unistochastic matrices, and dimension-four circulant
+unistochastic matrices, respectively. None establishes star-shapedness
+of this repeated-column subset. The distinction between the full
+unistochastic set and its circulant subset is also made in
+\cite[Section 4.3]{Salazar}. Conjecture 9 remains outside the conclusions
+of this note.
+
+\paragraph{Mathematical verification.}
+The declaration \texttt{result} in the pinned
+\href{https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean}{Lean source}
+states $\neg\exists\sigma\,\forall p\in\texttt{InRegion},\,
+\texttt{ProductForm}(\sigma,p)$. Its definition of \texttt{InRegion}
+uses three positive-semidefinite trace-one matrices with pairwise zero products
+and the specified real diagonals. Its proof constructs the diagonal
+\eqref{eq:point}; the private lemma \texttt{point\_not\_product} excludes
+every permutation for that same point. Thus the literal public declaration
+has a fixed outer ordering, while the witness-specific proof gives the stronger
+pointwise obstruction. The rank-one criterion, distance estimates, family
+and rational example, pure-state reduction, radial exclusion,
+exact state capacity and channel instances have written
+proofs here; they are not additional statements of \texttt{result}.
+The accompanying \texttt{verify.py} checks the weighted Gram matrix,
+the three pairing differences and all 24 permutations for each explicit
+diagonal in exact number-field arithmetic. It also checks the scalar identities,
+strict sign bounds and the family pairing polynomials.
+The geometric statements follow from the written arguments,
+not from numerical sampling.
+
+\begin{thebibliography}{6}
+\bibitem{KCPZ}
+K. Korzekwa, S. Czach\'orski, Z. Pucha\l a and K. \.Zyczkowski,
+\emph{Distinguishing classically indistinguishable states and channels},
+J. Phys. A: Math. Theor. \textbf{52} (2019), 475303.
+\href{https://doi.org/10.1088/1751-8121/ab30f7}{doi:10.1088/1751-8121/ab30f7}.
+\href{https://arxiv.org/abs/1812.09083v3}{arXiv:1812.09083v3},
+Section III.B, Eq. (30); Appendix C.3.
+First preprint: \href{https://arxiv.org/abs/1812.09083v1}{arXiv:1812.09083v1}
+(21 December 2018), Appendix B.1.
+\bibitem{BEKTZ}
+I. Bengtsson, \AA. Ericsson, M. Ku\'s, W. Tadej and K. \.Zyczkowski,
+\emph{Birkhoff's polytope and unistochastic matrices, $N=3$ and $N=4$},
+Commun. Math. Phys. \textbf{259} (2005), 307--324.
+\href{https://doi.org/10.1007/s00220-005-1392-8}{doi:10.1007/s00220-005-1392-8}.
+\href{https://arxiv.org/abs/math/0402325v2}{arXiv:math/0402325v2},
+Section 1, Eqs. (1)--(2), and Section 4.
+Preprint released 19 February 2004; version 2 dated 24 February 2004.
+\bibitem{RGZ}
+G. Rajchel, A. G\k{a}siorowski and K. \.Zyczkowski,
+\emph{Robust Hadamard matrices, unistochastic rays in Birkhoff polytope
+and equi-entangled bases in composite spaces},
+Math. Comput. Sci. \textbf{12} (2018), 473--490.
+\href{https://doi.org/10.1007/s11786-018-0384-y}{doi:10.1007/s11786-018-0384-y}.
+\href{https://arxiv.org/abs/1804.10715}{arXiv:1804.10715}, Appendix A.
+\bibitem{PRZ}
+Z. Pucha\l a, \L. Rudnicki and K. \.Zyczkowski,
+\emph{Pauli semigroups and unistochastic quantum channels},
+Phys. Lett. A \textbf{383} (2019), 2376--2381.
+\href{https://doi.org/10.1016/j.physleta.2019.04.057}{doi:10.1016/j.physleta.2019.04.057}.
+\href{https://arxiv.org/abs/1903.12448v1}{arXiv:1903.12448v1}, Section IV, Eq. (23).
+\bibitem{RMKPZ}
+G. Rajchel-Mieldzio\'c, K. Korzekwa, Z. Pucha\l a and K. \.Zyczkowski,
+\emph{Algebraic and geometric structures inside the Birkhoff polytope},
+J. Math. Phys. \textbf{63} (2022), 012202.
+\href{https://doi.org/10.1063/5.0046581}{doi:10.1063/5.0046581}.
+\href{https://arxiv.org/abs/2101.11288v1}{arXiv:2101.11288v1},
+Theorem 14, Corollary 16 and Theorem 17.
+\bibitem{Salazar}
+R. Salazar, J. Czartowski, R. Ravell Rodr\'iguez, G. Rajchel-Mieldzio\'c,
+P. Horodecki and K. \.Zyczkowski,
+\emph{Quantum resource theories beyond convexity},
+Quantum \textbf{10} (2026), 2104.
+\href{https://doi.org/10.22331/q-2026-05-13-2104}{doi:10.22331/q-2026-05-13-2104}.
+\href{https://arxiv.org/abs/2405.05785v6}{arXiv:2405.05785v6}, Section 4.3.
+\end{thebibliography}
+\paragraph{License.} CC BY 4.0 (Creative Commons Attribution 4.0 International).
+\end{document}

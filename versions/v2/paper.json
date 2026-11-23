@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 98653,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "34a997de962790a1f161602dc90193b779db71ff165fb77b3513885ed5b70564",
+      "sha256": "34a997de962790a1f161602dc90193b779db71ff165fb77b3513885ed5b70564"
+    },
+    "source": {
+      "bytes": 17835,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "0de89384dbce1a11bdb8b0635f957ecd97d9b581887b477105a6896a992e9464",
+      "sha256": "0de89384dbce1a11bdb8b0635f957ecd97d9b581887b477105a6896a992e9464"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "For the product-structure conjecture of Korzekwa, Czachórski, Puchała and Życzkowski (2019), Section III.B, Eq. (30) of arXiv:1812.09083v3, we extend constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019, Appendix C.1) by identifying a two-parameter family of counterexamples and giving a further counterexample outside that family. All are common diagonals of three orthogonal pure states and fail the proposed form under every vertex ordering. A rational example is (1/6,1/4,7/24,7/24); its total-variation distance from the union of proposed product forms is at least 1/192. The obstruction is an exact rank-one test on the residual barycentric weights.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 98653,
+      "sha256": "34a997de962790a1f161602dc90193b779db71ff165fb77b3513885ed5b70564",
+      "url": "/api/v1/collected-papers/korzekwa-et-al-2019-three-distinguishability-product-refutation/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-22T21:53:36.124156858Z",
+    "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+    "repository_name": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+    "source": {
+      "bytes": 17835,
+      "sha256": "0de89384dbce1a11bdb8b0635f957ecd97d9b581887b477105a6896a992e9464",
+      "url": "/api/v1/collected-papers/korzekwa-et-al-2019-three-distinguishability-product-refutation/files/source?version=2"
+    },
+    "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-22T21:53:36.124156858Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+  }
+}

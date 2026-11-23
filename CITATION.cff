@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this work, cite it."
+title: "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)"
+authors:
+  - name: "Haobo Ma"
+  - name: "Wenlin Zhang"
+date-released: "2026-11-22"
+version: "2"
+url: "https://mathesis-omega-research.apps.chrono-ai.fun/papers/korzekwa-et-al-2019-three-distinguishability-product-refutation?version=2"
+license: "CC-BY-4.0"

@@ -1,0 +1,364 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s1",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "Put $r=\\sqrt5$ and\n\\begin{equation}\n \\alpha=\\frac{5-r}{10},\\qquad\n \\beta=\\frac{5-r}{20},\\qquad\n \\gamma=\\frac{r-1}{4},\\qquad\n p=(\\alpha,\\beta,\\alpha,\\gamma).\n\\end{equation}\nThen $p\\in\\A_4^3$, but \\eqref{eq:ansatz} fails for every permutation\n$\\sigma$ and every $a,b\\in[0,1]$. In particular, the conjecture is\nrefuted (explicit counterexample), even when restricted to pure states and\nto the strict interior of the bounding tetrahedron.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s2",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s2",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "Suppose $0\\le p_k\\le1/3$ and $\\sum_kp_k=1$, and put $q_k=1-3p_k$.\nFor a fixed ordering $\\sigma$, \\eqref{eq:ansatz} holds if and only if\n\\[\n \\det\\begin{pmatrix}\n q_{\\sigma(0)}&q_{\\sigma(1)}\\\\\n q_{\\sigma(2)}&q_{\\sigma(3)}\n \\end{pmatrix}=0.\n\\]\nConsequently membership in the union of all product forms is equivalent\nto at least one of the three equal-product pairings being zero.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s3",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s3",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "Let $S$ be the union of the product forms \\eqref{eq:ansatz}, over all\npermutations and parameters. For the vector in \\eqref{eq:point},\n\\[\n \\inf_{p'\\in S}\\frac12\\|p-p'\\|_1\\ \\ge\\\n \\frac{15\\sqrt5-33}{240}>0.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s4",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s4",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "For $0\\le s\\le1/2$ and $0\\le t\\le1/3$, put\n\\[\n a=\\frac{1-3t}{4}+st,\\qquad\n b=\\frac{1-3t}{4}+(1-s)t,\\qquad h=\\frac{1+t}{4}.\n\\]\nThen $p(s,t)=(a,b,h,h)\\in\\A_4^3$, with pure-state witnesses.\nIf $0\\le s<1/2$ and $0<t<1/3$, it fails \\eqref{eq:ansatz} for every\npermutation.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s5",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "The rational diagonal $p_*=(1/6,1/4,7/24,7/24)$ belongs to $\\A_4^3$\nbut has no product representation under any ordering. Its distance from\nthe union $S$ of all forms \\eqref{eq:ansatz} satisfies\n\\[\n \\inf_{p'\\in S}\\tfrac12\\|p_*-p'\\|_1\\ge\\frac1{192}.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s6",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "For either explicit diagonal above, $T(p)=(p\\ p\\ p\\ 1-3p)$ is\nunistochastic. The largest number of perfectly distinguishable states with\nthat diagonal is exactly three. Every stochastic matrix having such a\ncolumn admits at least three perfectly distinguishable channels without\nentangled inputs. For $T(p)$ that number is four.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s7",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "No point in the relative interior of a two-dimensional face of $\\Pp_4^3$\nbelongs to $\\A_4^3$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s8",
+      "kind": "paper",
+      "label": "Proposition",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s8",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "Every $p\\in\\A_4^3$ has three orthogonal pure-state witnesses.\nConsequently $p\\in\\A_4^3$ if and only if\n$B(p)=(p\\ p\\ p\\ \\mathbf1-3p)$ is unistochastic.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "73ec20a01fc35e0f53bc258c605821728f3c33b6",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/73ec20a01fc35e0f53bc258c605821728f3c33b6/D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.lean"
+      },
+      "lineage": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:s9",
+      "macros": {
+        "\\A": "\\mathcal A",
+        "\\Pp": "\\mathcal P"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+      "scope": "in_scope",
+      "statement": "For $-1/9\\le t<0$, the probability vector\n$p_t=(1-3t,1+t,1+t,1+t)/4$ does not belong to $\\A_4^3$.\nThe endpoint $p_0=(1,1,1,1)/4$ does belong to $\\A_4^3$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+      "toolchain": null,
+      "version": 2,
+      "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+    }
+  ]
+}

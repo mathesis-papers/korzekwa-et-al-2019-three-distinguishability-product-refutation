@@ -1,0 +1,86 @@
+{
+  "arithmetic": "Exact rational arithmetic in Q[z]/(z^4-z^3+z^2-z+1), z=exp(pi*i/5)",
+  "weighted_gram_matrix": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "diagonal": [
+    "(5-sqrt(5))/10",
+    "(5-sqrt(5))/20",
+    "(5-sqrt(5))/10",
+    "(sqrt(5)-1)/4"
+  ],
+  "pairing_differences": [
+    "(21-9*sqrt(5))/10",
+    "(33-15*sqrt(5))/40",
+    "-(21-9*sqrt(5))/10"
+  ],
+  "excluded_permutations": 24,
+  "strict_interior": true,
+  "total_variation_lower_bound": "(15*sqrt(5)-33)/240",
+  "rational_example": {
+    "arithmetic": "Q[u,v]/(u^2+3,v^2+6), u=i*sqrt(3), v=i*sqrt(6)",
+    "diagonal": [
+      "1/6",
+      "1/4",
+      "7/24",
+      "7/24"
+    ],
+    "residual": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/8"
+    ],
+    "weighted_gram_matrix": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "pairing_differences": [
+      "7/64",
+      "1/32",
+      "1/32"
+    ],
+    "excluded_permutations": 24,
+    "strict_interior": true,
+    "total_variation_lower_bound": "1/192",
+    "status": "pass"
+  },
+  "family_polynomials": {
+    "arithmetic": "Exact sparse rational polynomials in c,t,s",
+    "pairing_differences": [
+      "3*c*t+9*t^2*s*(1-s)",
+      "3*c*t*(1-2*s)",
+      "3*c*t*(1-2*s)"
+    ],
+    "status": "pass"
+  },
+  "coverage": "Exact Gram matrices and 24 orderings for each explicit diagonal, and family polynomial identities; the geometric conclusions, parameter-wide existence and rank-one criterion have written proofs in note.tex.",
+  "status": "pass"
+}
