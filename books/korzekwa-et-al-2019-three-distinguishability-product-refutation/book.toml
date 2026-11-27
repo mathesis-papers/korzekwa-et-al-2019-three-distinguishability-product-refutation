@@ -1,0 +1,17 @@
+[book]
+version = "2"
+authors = ["Haobo Ma", "Wenlin Zhang"]
+license = "CC-BY-4.0"
+editions = ["zh", "en"]
+date = "2026-11-22"
+[book.title]
+zh = "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)"
+en = "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)"
+[outputs]
+html = true
+pdf = ["academic"]
+epub = true
+[mathesis]
+work = "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+version = 2
+source_title = "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)"

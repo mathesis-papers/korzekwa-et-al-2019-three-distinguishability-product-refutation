@@ -9,11 +9,11 @@
     "manuscript/README.md",
     "manuscript/metadata.json",
     "manuscript/note.tex",
+    "manuscript/original-source.archive",
     "manuscript/verification.json",
     "manuscript/verify.py",
     "paper.json",
-    "paper.pdf",
-    "source.archive"
+    "paper.pdf"
   ],
   "generator_version": "0.1.0",
   "sha256": {
@@ -22,15 +22,15 @@
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
     "README.md": "161cdd6854f084fd0f1f87aef95547ba339826072b130d507721fd510999006a",
-    "formalization/nodes.json": "9f0889026435d79533f62d211182dd664b0c8ae338d93621947e02b1c05a35c2",
+    "formalization/nodes.json": "aa6a530f148e1627248ec1db7fb53b125f36ae496d2c9066724ada4d6c7335a0",
     "manuscript/README.md": "fac5b949357e930dbed8be57805e34e2e265512f7db3d4cac5acf1cdb5128a94",
     "manuscript/metadata.json": "2141e19f6d86d4592e4df4f18c19b94d53125d05ede76d78d4916f4601fc7e7f",
     "manuscript/note.tex": "556c07f2cb095cf94ab57dda99c9bc24b60580a432fa198a82dbf33e9c00c7a1",
+    "manuscript/original-source.archive": "0de89384dbce1a11bdb8b0635f957ecd97d9b581887b477105a6896a992e9464",
     "manuscript/verification.json": "e60028db95712eac7a643153b96428bb9ce0c8e43b87edd145889cb9be80a73d",
     "manuscript/verify.py": "694ef4edc62a6b0f6ce52d56bb928e51827809997546f6c3696e9c87cefa0eec",
-    "paper.json": "644d002d80ffdf01cd86861258db15937a1717099fd01a5fc4a4d3c05809cba6",
-    "paper.pdf": "34a997de962790a1f161602dc90193b779db71ff165fb77b3513885ed5b70564",
-    "source.archive": "0de89384dbce1a11bdb8b0635f957ecd97d9b581887b477105a6896a992e9464"
+    "paper.json": "829f56a881d3a90ad1659dce908207f1fcdce9e8547287b1061520f856778006",
+    "paper.pdf": "34a997de962790a1f161602dc90193b779db71ff165fb77b3513885ed5b70564"
   },
-  "snapshot_identity": "a0a2409a56f031ef6c0b652c46477a66f0d7a11cd39e41e8824c369dfba1a035"
+  "snapshot_identity": "a84c7e19b1d96fbcbae433e748313f393ab3c74e2070de6cbc6c21c4c0512b93"
 }

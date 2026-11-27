@@ -1,0 +1,58 @@
+{
+  "results": {
+    "interior-example": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Theorem 1 fixes the displayed sqrt(5) diagonal, asserts pure orthogonal witnesses and strict interior, and universally excludes every ordering and a,b in the closed unit square. Public result negates existence of a single ordering covering InRegion (three PSD trace-one matrices with zero cross products). Private density_region and point_not_product supply membership by rank-one states and per-permutation exclusion for this very point; strict interior and the full witness are not a public theorem conclusion."
+    },
+    "rank-one-test": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Proposition 2 proves iff for all nonnegative p<=1/3 summing to one, including zero rows/columns, plus a three-pair disjunction across orderings. Private product_pairing only proves necessity; permutation_pairing supplies the combinatorial reduction, not the converse. Public result is a refutation, not a criterion. Written proof; canonical request registered."
+    },
+    "irrational-distance": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Corollary 3 gives the positive TV bound (15 sqrt(5)-33)/240 uniformly against the union; private point_pairings establishes non-equality, not the explicit minimum or uniform Lipschitz estimate."
+    },
+    "edge-family": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Proposition 4 includes all closed s,t endpoints in pure membership, but asserts nonproduct only for 0<=s<1/2 and 0<t<1/3. The module has one different witness, not this family or its boundary analysis. The inclusion is from Korzekwa et al., Appendix C.1; the radial subfamily is earlier."
+    },
+    "rational-example": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Corollary 5 uses the distinct rational point, pure orthogonal witnesses, all permutations excluded, and TV lower bound 1/192. The module uses the sqrt(5) witness, proves neither this example nor the distance bound."
+    },
+    "state-channel-capacity": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Corollary 6 treats both explicit diagonals: unistochastic completion, exact state capacity three, any stochastic matrix with such a column yields at least three unassisted channels, and T(p) gives four. The region witness proves none of the channel or maximality clauses."
+    },
+    "face-exclusion": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Corollary 7 excludes only relative interiors of two-dimensional faces, not edges or vertices. No such exclusion statement in the inspected module. Prior result: Korzekwa et al., Appendix C.2."
+    },
+    "pure-reduction": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Proposition 8 covers every InRegion point, including zeros and ranks (2,1,1) up to permutation. It gives both directions for repeated-column unistochasticity. The module constructs pure states only at one point and gives neither global direction as a standalone statement."
+    },
+    "radial-endpoint": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "scope": "Corollary 9 excludes the closed left endpoint -1/9 and all t<0 to the centre, for mixed as well as pure states; includes t=0. The module has no radial statement. Bengtsson et al. supply pure phase obstruction; Korzekwa et al. printed the centre in the excluded interval."
+    }
+  }
+}

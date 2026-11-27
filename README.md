@@ -32,3 +32,44 @@ Haobo Ma, Wenlin Zhang (2026). Counterexamples to Korzekwa et al. (2019), Sectio
 ## Contributions
 
 Original authors are listed above. Formalization contributors and attribution are retained in `formalization/nodes.json`; repository pull requests do not confer verification or credit. Submit formalization attempts through the Mathesis attempt path described in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+<!-- Mathesis generated repository guide; refresh with paper.py front. -->
+
+## Reading and materials
+
+[Paper site](https://papers.trureturing.org/korzekwa-et-al-2019-three-distinguishability-product-refutation/) · [Frozen PDF](paper.pdf) · [Citation](CITATION.cff)
+
+[中文阅读](https://papers.trureturing.org/korzekwa-et-al-2019-three-distinguishability-product-refutation/korzekwa-et-al-2019-three-distinguishability-product-refutation/zh/) · [Read in English](https://papers.trureturing.org/korzekwa-et-al-2019-three-distinguishability-product-refutation/korzekwa-et-al-2019-three-distinguishability-product-refutation/en/)
+
+[Slides](https://papers.trureturing.org/korzekwa-et-al-2019-three-distinguishability-product-refutation/korzekwa-et-al-2019-three-distinguishability-product-refutation/slides/) ([sources](books/korzekwa-et-al-2019-three-distinguishability-product-refutation/slides/)) · [Videos](https://papers.trureturing.org/korzekwa-et-al-2019-three-distinguishability-product-refutation/korzekwa-et-al-2019-three-distinguishability-product-refutation/films/) ([sources](books/korzekwa-et-al-2019-three-distinguishability-product-refutation/films/))
+
+These are publication routes; available built materials are inventoried in [mathesis-materials.json](https://papers.trureturing.org/korzekwa-et-al-2019-three-distinguishability-product-refutation/mathesis-materials.json).
+
+## Book and formalization
+
+Catalog formalization status above is separate from the statement comparisons below. A nearby declaration does not verify the complete written result.
+
+| Book result | Comparison with formal base | Compared declaration |
+|---|---|---|
+| `interior-example` | variant | `D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.result` |
+| `rank-one-test` | none | — |
+| `irrational-distance` | none | — |
+| `edge-family` | none | — |
+| `rational-example` | none | — |
+| `state-channel-capacity` | none | — |
+| `face-exclusion` | none | — |
+| `pure-reduction` | none | — |
+| `radial-endpoint` | none | — |
+
+Book stage: **complete**; 0 pending claims. [Statement comparisons](.mathesis/review.json).
+
+## Repository map
+
+| Zone | Location |
+|---|---|
+| Paper record | `paper.json`, `CITATION.cff`, `paper.pdf`, `manuscript/`, `formalization/nodes.json`, `LICENSES/`, `.mathesis/` |
+| Content | `books/korzekwa-et-al-2019-three-distinguishability-product-refutation/`: Chinese/English text, figures, visualizations, videos, slides, assets |
+| Machinery | Upstream and layer managed paths; update with `tbook template update` |
+| Repository front | This README, changelog, contribution guide, licence, project/site/pin configuration, `template.d/` |
+
+See [the enforced layout](docs/layer-mathesis/LAYOUT.md). Preparation run records and built outputs stay outside the committed tree.

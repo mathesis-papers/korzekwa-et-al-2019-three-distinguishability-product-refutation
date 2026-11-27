@@ -1,0 +1,26 @@
+{
+  "voice": "af_heart",
+  "speed": 0.94,
+  "say": {},
+  "music": {"bpm": 80, "progression": "a-minor"},
+  "scenes": [
+    {"id": "lights", "name": "Same probabilities", "lead": 0.8, "tail": 0.6, "lines": [
+      ["Can three settings light the same four lamps in exactly the same proportions, yet remain perfectly distinguishable?", "三个挡位以完全相同的比例点亮四盏灯，还能被完美区分吗？"],
+      ["Here are the four probabilities: one sixth, one quarter, and seven twenty-fourths twice.", "这四个概率是六分之一、四分之一，以及两项二十四分之七。"]
+    ]},
+    {"id": "phases", "name": "Three orthogonal rows", "lead": 0.4, "tail": 0.6, "lines": [
+      ["A squared magnitude tells you the probability, but not the phase. Take the same four magnitudes in each row.", "模平方告诉你概率，却不告诉你相位。每行取相同的四个模长。"],
+      ["Choose phases to cancel the first inner product. Swapping the last two phases gives another cancellation.", "选择相位，使第一个内积抵消为零。交换最后两个相位，得到另一个零内积。"],
+      ["The remaining inner product vanishes too. So all three vectors are orthogonal, while the original probabilities stay the same.", "剩下的一对内积也是零。所以三个向量相互正交，原来的概率却完全相同。"]
+    ]},
+    {"id": "pairing", "name": "The product test", "lead": 0.4, "tail": 0.6, "lines": [
+      ["The conjecture would mix four vertices like the outcomes of two independent coins. Subtract three times each probability from one to get the vertex weights.", "猜想把四个顶点像两枚独立硬币的四种结果那样混合。用一减去各概率的三倍，就得到顶点权重。"],
+      ["Place the weights in a two by two table. Independent coins require the opposite products to be equal.", "把权重放进二乘二表格。若两枚硬币独立，两条对角线的乘积必相等。"],
+      ["There are three ways to pair the weights. Their differences are seven sixty-fourths, one thirty-second, and one thirty-second. Not one is zero.", "权重只有三种配对。乘积差是六十四分之七、三十二分之一、三十二分之一，全都不为零。"]
+    ]},
+    {"id": "scope", "name": "What fails", "lead": 0.4, "tail": 1.4, "lines": [
+      ["The diagonal is attainable, but no ordering gives a product. That disproves necessity. It does not describe the entire region.", "这个对角线可以实现，却没有一种排列能产生乘积形式。这否定了必要性，但没有刻画整个区域。"],
+      ["Ma and Zhang give the counterexamples. The centre-to-edge construction was already proved by Korzekwa and colleagues.", "反例由 Haobo Ma 与 Wenlin Zhang 给出。中心到边的构造早已由 Korzekwa 等人证明。"]
+    ]}
+  ]
+}

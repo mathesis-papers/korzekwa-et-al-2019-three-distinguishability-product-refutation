@@ -1,0 +1,104 @@
+\documentclass{beamer}
+\input{tbook-deck}
+\title{Three orthogonal states, one diagonal}
+\subtitle{Counterexamples to the product conjecture in dimension four}
+\author[Ma and Zhang (paper authors)]{Based on work by Haobo Ma and Wenlin Zhang}
+\institute{Ma: ChronoAI Pte Ltd, Singapore\\Zhang: National University of Singapore and ChronoAI Pte Ltd, Singapore}
+\date{Version 2, 6 November 2026}
+\begin{document}
+% Manuscript: Section 1, Eq. (30) of Korzekwa et al.
+\begin{frame}
+  \titlepage
+  \note{This is a seminar on the paper by Ma and Zhang, not a talk delivered on their behalf. We will separate a construction, which gives orthogonal states, from a test of the proposed product representation.}
+\end{frame}
+% Manuscript: Sections 1--4
+\begin{frame}{Outline}
+  \tableofcontents
+  \note{Begin with the four probabilities, then derive the test, verify one exact counterexample, and explain the limits.}
+\end{frame}
+\section{The proposed product form}
+\subsection{From measurement to geometry}
+% Manuscript: Section 1, definition of the region
+\begin{frame}{Same measurement, different states}
+  \begin{itemize}
+    \item Four measurement outcomes, one probability vector $p$.
+    \item For a unit vector $x$, $p_k=|x_k|^2$; phases are not observed in this basis.
+    \item Three orthogonal unit vectors with these magnitudes give three perfectly distinguishable states.
+    \item The general region $\mathcal A_4^3$ allows any three trace-one positive semidefinite matrices with orthogonal supports.
+  \end{itemize}
+  \note{Recall that a pure state $xx^*$ has diagonal $p$. Orthogonality refers to a measurement that need not be in the original basis. Summing the three density matrices gives an operator at most $I$, hence $3p_k\le 1$.}
+\end{frame}
+% Manuscript: Proposition 2
+\begin{frame}{Why a product gives one equation}
+  \begin{itemize}
+    \item Vertices $f^j_k=(1-\delta_{jk})/3$; uniquely $q_k=1-3p_k$.
+    \item Two independent binary choices give weights $ab,a(1-b),(1-a)b,(1-a)(1-b)$.
+    \item For an ordering with table $\left(\begin{smallmatrix}u&v\\w&h\end{smallmatrix}\right)$, the necessary and sufficient test is $uh=vw$.
+  \end{itemize}
+  \[
+    a=u+v,\qquad b=u+w,\qquad u-ab=uh-vw.
+  \]
+  \note{Set $a$ and $b$ to the row and column totals. If $uh=vw$, recover the remaining entries by subtraction. This proof also works if a row or column vanishes. Up to reversing signs there are only three pairings of four weights into opposite pairs.}
+\end{frame}
+\section{The rational witness}
+\subsection{Two independent checks}
+% Manuscript: Proposition 4 and Corollary 5
+\begin{frame}{Build three orthogonal vectors}
+  \[
+    p_*=(1/6,1/4,7/24,7/24),\qquad
+    \text{phase rows } (1,1,1,1),\ (1,\omega,v,w),\ (1,\omega,w,v).
+  \]
+  \begin{itemize}
+    \item Multiply each phase by the corresponding $\sqrt{p_{*,k}}$.
+    \item With $\omega=(-1+i\sqrt3)/2$ and $v,w=-(1+3i\sqrt3)(1\pm i\sqrt6)/14$, all phases have modulus one.
+    \item $v+w=-(1+3i\sqrt3)/7$, $\operatorname{Re}(\overline v w)=-5/7$.
+  \end{itemize}
+  \note{The first two cancellations both equal $1/6+\omega/4+(7/24)(v+w)=0$. The swapped entries give the last cancellation $1/6+1/4+2(7/24)(-5/7)=0$. The construction is a point in the centre-to-edge family of Korzekwa et al., with $s=1/4$ and $t=1/6$.}
+\end{frame}
+% Manuscript: Corollaries 3 and 5
+\begin{frame}{Fail every product test}
+  \[
+    q_*=(1/2,1/4,1/8,1/8),\qquad
+    D_1=7/64,\quad D_2=D_3=1/32.
+  \]
+  \begin{itemize}
+    \item Every ordering requires a zero pairing difference. None is zero.
+    \item For any one pairing, $|D(q)-D(q')|\le \|q-q'\|_1$.
+    \item For every product point $p'$, $\tfrac12\|p_*-p'\|_1\ge 1/192$.
+  \end{itemize}
+  \note{Pair $1/2$ first with $1/4$, then with either $1/8$. A product point makes at least one pairing vanish, and $\|q-q'\|_1=3\|p-p'\|_1$. The lower bound is not asserted to be the exact distance.}
+\end{frame}
+\section{Scope and sources}
+\subsection{What changes and what does not}
+% Manuscript: Theorem 1 and Sections 3--5
+\begin{frame}{Beyond one point}
+  \begin{itemize}
+    \item The centre-to-edge inclusion is prior work; $0\le s<1/2$ and $0<t<1/3$ give product counterexamples.
+    \item A second, strict-interior witness is $(\alpha,\beta,\alpha,\gamma)$ where $\alpha=(5-\sqrt5)/10$, $\beta=\alpha/2$, $\gamma=(\sqrt5-1)/4$.
+    \item Its repeated coordinate is intermediate, not maximal as in the earlier family.
+  \end{itemize}
+  \note{The second witness uses powers of $e^{\pi i/5}$; reducing powers by a quadratic identity makes the inner products cancel. The public Lean statement rules out a single ordering for the entire region. Its proof uses the common witness across orderings, but the public statement does not assert the explicit pure and interior witness.}
+\end{frame}
+% Manuscript: Corollaries 6, 7, 9 and Proposition 8
+\begin{frame}{What the refutation leaves intact}
+  \begin{itemize}
+    \item The tetrahedron bound and the relative-face-interior exclusion.
+    \item The centre belongs: use three columns of the Fourier matrix at $t=0$.
+    \item Pure witnesses suffice in this dimension, so membership is equivalent to unistochasticity of $(p\ p\ p\ 1-3p)$.
+    \item No converse to Eq.~(30), full-region description, or star-shapedness result follows.
+  \end{itemize}
+  \note{The pure-witness reduction handles the only mixed rank pattern $(2,1,1)$. This gives a different exact characterization in terms of a special matrix family, not a geometric description of that family. Keep distinguishable channels on one input separate from distinguishable states with one diagonal.}
+\end{frame}
+% Manuscript: Bibliography
+\begin{frame}{Sources}
+  \begin{itemize}
+    \item Ma and Zhang, counterexample note, v2: \href{https://doi.org/10.5281/zenodo.24406607}{10.5281/zenodo.24406607}.
+    \item Korzekwa, Czach\'orski, Pucha\l{}a and \.Zyczkowski (2019), \S III.B, Eq.~(30), Appendix C: \href{https://doi.org/10.1088/1751-8121/ab30f7}{10.1088/1751-8121/ab30f7}.
+    \item Bengtsson, Ericsson, Ku\'s, Tadej and \.Zyczkowski (2005), \S4 and Appendix C: \href{https://doi.org/10.1007/s00220-005-1392-8}{10.1007/s00220-005-1392-8}.
+  \end{itemize}
+  \note{Credit the original problem and prior constructions separately from the product refutation, and direct listeners to the version-two note for the exact scope.}
+\end{frame}
+\appendix
+% Manuscript: Verification ledger (generated)
+\FormalVerification
+\end{document}

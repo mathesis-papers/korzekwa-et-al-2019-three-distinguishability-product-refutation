@@ -1,0 +1,27 @@
+{
+  "id": "001-one-diagonal",
+  "title": "One diagonal, three orthogonal states",
+  "title_zh": "同一组概率，三个正交态",
+  "summary": "Use three orthogonal phase patterns and an exact two-by-two pairing test to refute the proposed product form.",
+  "summary_zh": "用三个正交相位图样与精确的二乘二配对检验，否定猜想中的乘积形式。",
+  "subject": "https://github.com/the-omega-institute/trureturing",
+  "publication_basis": "pinned",
+  "released": "2026-11-24",
+  "duration": "1:23",
+  "resolution": "1280x720@30",
+  "style": "trureturing cyberpunk · deterministic canvas",
+  "narration": {
+    "language": "en",
+    "engine": "Kokoro-82M v1.0 (onnx)",
+    "voice": "af_heart"
+  },
+  "subtitles": [
+    "zh",
+    "en"
+  ],
+  "lean": [],
+  "outputs": {
+    "narrated_720p": "korzekwa-et-al-2019-three-distinguishability-product-refutation_001_720p_narrated.mp4",
+    "cover": "korzekwa-et-al-2019-three-distinguishability-product-refutation_001_cover.jpg"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "book": "korzekwa-et-al-2019-three-distinguishability-product-refutation",
+  "pending_claims": [],
+  "results": {
+    "interior-example": {
+      "comparison_verdict": "variant",
+      "compared_public_gid": "D5/S3/Quantum/Measurements/ThreeDistinguishabilityProductRefutation.result",
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s1",
+      "gids": []
+    },
+    "rank-one-test": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s2",
+      "gids": [],
+      "formalization_request": {
+        "label": "Proposition 2 — Rank-one test for residual vertex weights",
+        "url": "https://github.com/the-omega-institute/trureturing-requests/issues/592"
+      }
+    },
+    "irrational-distance": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s3",
+      "gids": []
+    },
+    "edge-family": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s4",
+      "gids": []
+    },
+    "rational-example": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s5",
+      "gids": []
+    },
+    "state-channel-capacity": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s6",
+      "gids": []
+    },
+    "face-exclusion": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s7",
+      "gids": []
+    },
+    "pure-reduction": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s8",
+      "gids": []
+    },
+    "radial-endpoint": {
+      "comparison_verdict": "none",
+      "compared_public_gid": null,
+      "comparison_commit": "8a24ea4e79de962725aab9d9b49cc605fcc211d8",
+      "claim": "collected:korzekwa-et-al-2019-three-distinguishability-product-refutation:2:s9",
+      "gids": []
+    }
+  },
+  "stage": "complete",
+  "titles": {
+    "en": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)",
+    "zh": "Counterexamples to Korzekwa et al. (2019), Section III.B, p. 6, Eq. (30): extending constructions of Bengtsson et al. (2005) and Korzekwa et al. (2019)"
+  },
+  "version": 2,
+  "work": "korzekwa-et-al-2019-three-distinguishability-product-refutation"
+}
